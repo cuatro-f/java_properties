@@ -1,0 +1,41 @@
+\doxysection{properties.\+h}
+\hypertarget{properties_8h_source}{}\label{properties_8h_source}\index{property/properties/properties.h@{property/properties/properties.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PROPERTIES\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PROPERTIES\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceprop}{prop}}\ \{}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structprop_1_1Properties}{Properties}}\ \{}
+\DoxyCodeLine{00018\ \ \ std::string\ \mbox{\hyperlink{structprop_1_1Properties_a90e5b74db3985357b98f3461cebc6748}{name}};\ \ \ }
+\DoxyCodeLine{00019\ \ \ std::string\ \mbox{\hyperlink{structprop_1_1Properties_a2204eef08c3278b4290a95b3f789e5e1}{group}};\ \ }
+\DoxyCodeLine{00020\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structprop_1_1Properties_a5d7a240d5299721f938de6356c4022d1}{grade}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00021\ \};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00033\ std::string\ \mbox{\hyperlink{namespaceprop_ad7df68faca30adbafb7b80111318d223}{properties\_to\_str}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structprop_1_1Properties}{Properties}}\&\ properties,\ \textcolor{keyword}{const}\ std::string\&\ name);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00045\ std::string\ \mbox{\hyperlink{namespaceprop_ad7df68faca30adbafb7b80111318d223}{properties\_to\_str}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structprop_1_1Properties}{Properties}}\ \&properties,\ \textcolor{keywordtype}{char}\ *name);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00059\ std::string\ \mbox{\hyperlink{namespaceprop_ad7df68faca30adbafb7b80111318d223}{properties\_to\_str}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structprop_1_1Properties}{Properties}}\ \&\mbox{\hyperlink{namespaceprop_ad7df68faca30adbafb7b80111318d223}{properties\_to\_str}},\ \textcolor{keywordtype}{char}\ *name,\ \textcolor{keywordtype}{size\_t}\ len);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00071\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceprop_a263abb588d49a27b1137a136eff89c44}{str\_to\_properties}}(\textcolor{keyword}{const}\ std::string\&\ str,\ \mbox{\hyperlink{structprop_1_1Properties}{Properties}}\&\ properties);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00084\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceprop_a263abb588d49a27b1137a136eff89c44}{str\_to\_properties}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str,\ \mbox{\hyperlink{structprop_1_1Properties}{Properties}}\&\ properties);}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00098\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceprop_a263abb588d49a27b1137a136eff89c44}{str\_to\_properties}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str,\ \textcolor{keywordtype}{size\_t}\ len,\ \mbox{\hyperlink{structprop_1_1Properties}{Properties}}\&\ properties);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00108\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceprop_a81b4d1b875edc7ba45c19f73e35835c4}{print\_properties}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structprop_1_1Properties}{Properties}}\&\ properties);}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00120\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceprop_a67253c562bd0e0c61903e204d3c220bb}{is\_properties}}(\textcolor{keyword}{const}\ std::string\&\ str);}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00133\ std::vector<std::string>\ \mbox{\hyperlink{namespaceprop_ae0495dcb81b208d77d91148a737b3089}{split}}(\textcolor{keyword}{const}\ std::string\&\ str,\ \textcolor{keyword}{const}\ std::string\&\ delimiter);}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \}\ \textcolor{comment}{//\ namespace\ prop}}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !PROPERTIES\_H}}
+
+\end{DoxyCode}
